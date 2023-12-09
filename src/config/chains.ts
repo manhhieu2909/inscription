@@ -17,6 +17,7 @@ import {
   optimism,
   polygon,
   zkSync,
+  eos,
 } from "viem/chains";
 
 export const shibarium = defineChain({
@@ -60,6 +61,7 @@ export const inscriptionChains = {
   confluxESpace,
   gnosis,
   shibarium,
+  eos,
 };
 
 export type ChainKey = keyof typeof inscriptionChains;
