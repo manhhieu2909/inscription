@@ -7,6 +7,7 @@ import {
   celo,
   classic,
   confluxESpace,
+  eos,
   fantom,
   filecoin,
   gnosis,
@@ -17,7 +18,6 @@ import {
   optimism,
   polygon,
   zkSync,
-  eos,
 } from "viem/chains";
 
 export const shibarium = defineChain({
