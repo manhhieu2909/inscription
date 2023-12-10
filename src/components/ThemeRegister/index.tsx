@@ -49,7 +49,7 @@ export default function ThemeRegister({ children, themeMode }: IAppProps) {
             maxWidth="xl"
             className=" mt-16"
           >
-            <Media />
+            {/* <Media /> */}
 
             {children}
           </Container>

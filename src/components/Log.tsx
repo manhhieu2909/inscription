@@ -15,7 +15,7 @@ export default function Log({ title, logs, onClear }: LogProps) {
           color="secondary"
           onClick={onClear}
         >
-          Clear
+          Xóa nhật ký
         </Button>
       </div>
       <Box
