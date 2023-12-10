@@ -7,6 +7,7 @@ import {
   celo,
   classic,
   confluxESpace,
+  coreDao,
   eos,
   fantom,
   filecoin,
@@ -85,6 +86,7 @@ export const inscriptionChains = {
   shibarium,
   eos,
   ethw,
+  coreDao,
 };
 
 export type ChainKey = keyof typeof inscriptionChains;
