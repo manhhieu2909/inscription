@@ -87,6 +87,28 @@ export const etc = defineChain({
   },
 });
 
+export const kucoin = defineChain({
+  id: 321,
+  name: "KCC Mainnet",
+  network: "KCC Mainnet",
+  nativeCurrency: {
+    decimals: 18,
+    name: "KCS",
+    symbol: "KCS",
+  },
+  rpcUrls: {
+    default: {
+      http: ["https://rpc-mainnet.kcc.network"],
+    },
+    public: {
+      http: ["https://rpc-mainnet.kcc.network"],
+    },
+  },
+  blockExplorers: {
+    default: { name: "Explorer", url: "https://explorer.kcc.io/en" },
+  },
+});
+
 export const inscriptionChains = {
   eth: mainnet,
   bsc,
@@ -110,6 +132,7 @@ export const inscriptionChains = {
   ethw,
   coreDao,
   etc,
+  kucoin,
 };
 
 export type ChainKey = keyof typeof inscriptionChains;
