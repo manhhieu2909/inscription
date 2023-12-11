@@ -65,6 +65,28 @@ export const ethw = defineChain({
   },
 });
 
+export const etc = defineChain({
+  id: 61,
+  name: "Ethereum Classic Mainnet",
+  network: "Ethereum Classic Mainnet",
+  nativeCurrency: {
+    decimals: 18,
+    name: "ETC",
+    symbol: "ETC",
+  },
+  rpcUrls: {
+    default: {
+      http: ["https://etc.rivet.link"],
+    },
+    public: {
+      http: ["https://etc.rivet.link"],
+    },
+  },
+  blockExplorers: {
+    default: { name: "Explorer", url: "https://blockscout.com/etc/mainnet" },
+  },
+});
+
 export const inscriptionChains = {
   eth: mainnet,
   bsc,
@@ -87,6 +109,7 @@ export const inscriptionChains = {
   eos,
   ethw,
   coreDao,
+  etc,
 };
 
 export type ChainKey = keyof typeof inscriptionChains;
