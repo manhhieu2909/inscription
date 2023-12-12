@@ -14,10 +14,12 @@ import {
   gnosis,
   linea,
   mainnet,
+  metis,
   okc,
   opBNB,
   optimism,
   polygon,
+  ronin,
   zkSync,
 } from "viem/chains";
 
@@ -133,6 +135,8 @@ export const inscriptionChains = {
   coreDao,
   etc,
   kucoin,
+  metis,
+  ronin,
 };
 
 export type ChainKey = keyof typeof inscriptionChains;
