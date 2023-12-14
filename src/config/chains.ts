@@ -20,6 +20,7 @@ import {
   optimism,
   polygon,
   ronin,
+  scroll,
   zkSync,
 } from "viem/chains";
 
@@ -137,6 +138,7 @@ export const inscriptionChains = {
   kucoin,
   metis,
   ronin,
+  scroll,
 };
 
 export type ChainKey = keyof typeof inscriptionChains;
