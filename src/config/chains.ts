@@ -68,25 +68,26 @@ export const ethw = defineChain({
   },
 });
 
-export const etc = defineChain({
-  id: 61,
-  name: "Ethereum Classic Mainnet",
-  network: "Ethereum Classic Mainnet",
+
+export const ace = defineChain({
+  id: 648,
+  name: "Endurance Smart Chain Mainnet",
+  network: "Endurance Smart Chain Mainnet",
   nativeCurrency: {
     decimals: 18,
-    name: "ETC",
-    symbol: "ETC",
+    name: "ACE",
+    symbol: "ACE",
   },
   rpcUrls: {
     default: {
-      http: ["https://etc.rivet.link"],
+      http: ["https://rpc-endurance.fusionist.io"],
     },
     public: {
-      http: ["https://etc.rivet.link"],
+      http: ["https://rpc-endurance.fusionist.io"],
     },
   },
   blockExplorers: {
-    default: { name: "Explorer", url: "https://blockscout.com/etc/mainnet" },
+    default: { name: "Explorer", url: "https://explorer.endurance.fusionist.io" },
   },
 });
 
@@ -134,11 +135,11 @@ export const inscriptionChains = {
   eos,
   ethw,
   coreDao,
-  etc,
   kucoin,
   metis,
   ronin,
   scroll,
+  ace,
 };
 
 export type ChainKey = keyof typeof inscriptionChains;
