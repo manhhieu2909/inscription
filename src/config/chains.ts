@@ -113,6 +113,27 @@ export const kucoin = defineChain({
   },
 });
 
+export const mapo = defineChain({
+  id: 22776,
+  name: "MAP Mainnet",
+  network: "MAP Mainnet",
+  nativeCurrency: {
+    decimals: 18,
+    name: "MAPO",
+    symbol: "MAPO",
+  },
+  rpcUrls: {
+    default: {
+      http: ["https://rpc.maplabs.io"],
+    },
+    public: {
+      http: ["https://rpc.maplabs.io"],
+    },
+  },
+  blockExplorers: {
+    default: { name: "Explorer", url: "https://mapscan.io" },
+  },
+});
 export const inscriptionChains = {
   eth: mainnet,
   bsc,
@@ -140,6 +161,7 @@ export const inscriptionChains = {
   ronin,
   scroll,
   ace,
+  mapo,
 };
 
 export type ChainKey = keyof typeof inscriptionChains;
