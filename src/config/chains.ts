@@ -113,6 +113,50 @@ export const kucoin = defineChain({
   },
 });
 
+export const gate = defineChain({
+  id: 86,
+  name: "GateChain Mainnet",
+  network: "GateChain Mainnet",
+  nativeCurrency: {
+    decimals: 18,
+    name: "GT",
+    symbol: "GT",
+  },
+  rpcUrls: {
+    default: {
+      http: ["https://evm.nodeinfo.cc"],
+    },
+    public: {
+      http: ["https://evm.nodeinfo.cc"],
+    },
+  },
+  blockExplorers: {
+    default: { name: "Explorer", url: "https://gatescan.org/" },
+  },
+});
+
+export const wemix = defineChain({
+  id: 1111,
+  name: "WEMIX3.0 Mainnet",
+  network: "WEMIX3.0 Mainnet",
+  nativeCurrency: {
+    decimals: 18,
+    name: "WEMIX",
+    symbol: "WEMIX",
+  },
+  rpcUrls: {
+    default: {
+      http: ["https://api.wemix.com"],
+    },
+    public: {
+      http: ["https://api.wemix.com"],
+    },
+  },
+  blockExplorers: {
+    default: { name: "Explorer", url: "https://explorer.wemix.com" },
+  },
+});
+
 export const mapo = defineChain({
   id: 22776,
   name: "MAP Mainnet",
@@ -162,6 +206,7 @@ export const inscriptionChains = {
   scroll,
   ace,
   mapo,
+  gate,
 };
 
 export type ChainKey = keyof typeof inscriptionChains;
