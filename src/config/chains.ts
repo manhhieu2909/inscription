@@ -157,6 +157,28 @@ export const wemix = defineChain({
   },
 });
 
+export const meter = defineChain({
+  id: 82,
+  name: "Meter Mainnet",
+  network: "Meter Mainnet",
+  nativeCurrency: {
+    decimals: 18,
+    name: "MTR",
+    symbol: "MTR",
+  },
+  rpcUrls: {
+    default: {
+      http: ["https://meter.blockpi.network/v1/rpc/public"],
+    },
+    public: {
+      http: ["https://meter.blockpi.network/v1/rpc/public"],
+    },
+  },
+  blockExplorers: {
+    default: { name: "Explorer", url: "https://scan.meter.io" },
+  },
+});
+
 export const mapo = defineChain({
   id: 22776,
   name: "MAP Mainnet",
@@ -207,6 +229,7 @@ export const inscriptionChains = {
   ace,
   mapo,
   gate,
+  meter,
 };
 
 export type ChainKey = keyof typeof inscriptionChains;
