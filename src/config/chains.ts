@@ -229,6 +229,7 @@ export const inscriptionChains = {
   ace,
   mapo,
   gate,
+  meter,
 };
 
 export type ChainKey = keyof typeof inscriptionChains;
