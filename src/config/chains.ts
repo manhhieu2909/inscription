@@ -14,6 +14,7 @@ import {
   gnosis,
   linea,
   mainnet,
+  mantle,
   metis,
   okc,
   opBNB,
@@ -230,6 +231,7 @@ export const inscriptionChains = {
   mapo,
   gate,
   meter,
+  mantle,
 };
 
 export type ChainKey = keyof typeof inscriptionChains;
