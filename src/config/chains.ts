@@ -47,6 +47,28 @@ export const shibarium = defineChain({
   },
 });
 
+export const combo = defineChain({
+  id: 9980,
+  name: "Combo MainNet",
+  network: "Combo MainNet",
+  nativeCurrency: {
+    decimals: 18,
+    name: "BNB",
+    symbol: "BNB",
+  },
+  rpcUrls: {
+    default: {
+      http: ["https://rpc.combonetwork.io"],
+    },
+    public: {
+      http: ["https://rpc.combonetwork.io"],
+    },
+  },
+  blockExplorers: {
+    default: { name: "Explorer", url: "https://combotrace.nodereal.io/" },
+  },
+});
+
 export const ethw = defineChain({
   id: 10001,
   name: "ETHW-mainnet",
