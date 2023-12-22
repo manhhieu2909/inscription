@@ -277,6 +277,7 @@ export const inscriptionChains = {
   meter,
   mantle,
   zkfair,
+  combo,
 };
 
 export type ChainKey = keyof typeof inscriptionChains;
