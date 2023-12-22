@@ -91,6 +91,28 @@ export const zkfair = defineChain({
   },
 });
 
+export const bevm = defineChain({
+  id: 1501,
+  name: "BEVM",
+  network: "BEVM",
+  nativeCurrency: {
+    decimals: 18,
+    name: "BTC",
+    symbol: "BTC",
+  },
+  rpcUrls: {
+    default: {
+      http: ["https://rpc-1.bevm.io"],
+    },
+    public: {
+      http: ["https://rpc-1.bevm.io"],
+    },
+  },
+  blockExplorers: {
+    default: { name: "Explorer", url: "https://scan.bevm.io" },
+  },
+});
+
 export const ethw = defineChain({
   id: 10001,
   name: "ETHW-mainnet",
@@ -278,6 +300,7 @@ export const inscriptionChains = {
   mantle,
   zkfair,
   combo,
+  bevm,
 };
 
 export type ChainKey = keyof typeof inscriptionChains;
