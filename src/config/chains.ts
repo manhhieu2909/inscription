@@ -69,6 +69,28 @@ export const combo = defineChain({
   },
 });
 
+export const zkfair = defineChain({
+  id: 42766,
+  name: "ZKFair Mainnet",
+  network: "ZKFair Mainnet",
+  nativeCurrency: {
+    decimals: 18,
+    name: "USDC",
+    symbol: "USDC",
+  },
+  rpcUrls: {
+    default: {
+      http: ["https://rpc.zkfair.io"],
+    },
+    public: {
+      http: ["https://rpc.zkfair.io"],
+    },
+  },
+  blockExplorers: {
+    default: { name: "Explorer", url: "https://scan.zkfair.io/" },
+  },
+});
+
 export const ethw = defineChain({
   id: 10001,
   name: "ETHW-mainnet",
@@ -254,6 +276,7 @@ export const inscriptionChains = {
   gate,
   meter,
   mantle,
+  zkfair,
 };
 
 export type ChainKey = keyof typeof inscriptionChains;
